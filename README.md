@@ -8,7 +8,7 @@ Because of the complexity of the language, the students code has to comply with 
 ## Description
 
 ex00:  
-Code a 'Bueraucrat' class, with a grade in a specific range. If someone tries to instanciate a Bueraucrat with an invalid grade, throw an exception.  
+Code a 'Bureaucrat' class, with a grade in a specific range. If someone tries to instanciate a Bureaucrat with an invalid grade, throw an exception.  
 (intro to exceptions and exception classes)
 
 ex01:  
