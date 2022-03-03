@@ -8,19 +8,19 @@ Because of the complexity of the language, the students code has to comply with 
 ## Description
 
 ex00:  
-Code a 'Bueraucrat' class, with a grade in a specific range. If someone tries to instanciate a Bueraucrat with an invalid grade, throw an exception.
+Code a 'Bueraucrat' class, with a grade in a specific range. If someone tries to instanciate a Bueraucrat with an invalid grade, throw an exception.  
 (intro to exceptions and exception classes)
 
 ex01:  
-Implement a class 'Form', which is only signable holding a Bueraucrat with a specific grade. If Bueraucrats grade too high or low, throw the corresponding exception. 
+Implement a class 'Form', which is only signable holding a Bueraucrat with a specific grade. If Bueraucrats grade too high or low, throw the corresponding exception.  
 (catching and using the exceptions return in a function)
 
 ex02:  
-Change 'Form' class to abstract class, and write 3 sub-classes with different behaviour, to implement different exceptions.
+Change 'Form' class to abstract class, and write 3 sub-classes with different behaviour, to implement different exceptions.  
 (repetition of C++ file manipulation & exception handling in sub-types)
 
 ex03:  
-Create an 'Intern' class with a 'makeForm(arg a, arg b)' function. If 'arg a' exists, the function will return a Form object with name 'arg a' and target initialized to 'arg b'.
+Create an 'Intern' class with a 'makeForm(arg a, arg b)' function. If 'arg a' exists, the function will return a Form object with name 'arg a' and target initialized to 'arg b'.  
 (repetition of exception handling, switch statement and function pointers)
 
 ## Learnings
