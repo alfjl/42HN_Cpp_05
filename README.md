@@ -25,7 +25,7 @@ Create an 'Intern' class with a 'makeForm(arg a, arg b)' function. If 'arg a' ex
 
 ## Learnings
 
-Repeating all the concepts and topics of C++ and OOP learned so far, and refreshing my knowledge of exception handling in C++.
+Repeating all the concepts and topics of C++ and OOP learned so far, and refreshing my knowledge of exception handling in C++, as well as a short excursion into nested classes.
 
 ### Resources
 
