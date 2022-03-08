@@ -1,6 +1,7 @@
 #include "Bureaucrat.hpp"
 #include "PresidentialPardonForm.hpp"
 #include "RobotomyRequestForm.hpp"
+#include "ShrubberyCreationForm.hpp"
 
 int main()
 {
@@ -18,6 +19,9 @@ int main()
     PresidentialPardonForm      x = PresidentialPardonForm("XXX");
     PresidentialPardonForm      y = PresidentialPardonForm("YYY");
     RobotomyRequestForm         r = RobotomyRequestForm("RRR");
+    ShrubberyCreationForm       s1 = ShrubberyCreationForm("target1");
+    ShrubberyCreationForm       s2 = ShrubberyCreationForm("target2");
+    ShrubberyCreationForm       s3(s1);
 
     std::cout << x << std::endl;
     std::cout << y << std::endl;
@@ -61,5 +65,19 @@ int main()
     peter.signForm(r);
     peter.executeForm(r);
 
+    std::cout << "\n########## EXECUTE UNSIGNED & SIGNED SHRUBBERY ##########" << std::endl;
+    peter.executeForm(s1);
+    peter.signForm(s1);
+    norbert.signForm(s2);
+    peter.executeForm(s1);
+    norbert.executeForm(s2);
+    peter.executeForm(s1);
+    peter.executeForm(s1);
+    norbert.executeForm(s1);
+    norbert.executeForm(s2);
+    peter.signForm(s3);
+    norbert.executeForm(s3);
+    peter.executeForm(s3);
+    
     return (0);
 }

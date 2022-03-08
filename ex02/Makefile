@@ -4,11 +4,6 @@ CFLAGS = -Wall -Wextra -Werror -g
 SRC = main.cpp \
 	  Bureaucrat.cpp \
 	  Form.cpp \
-	  RobotomyRequestForm.cpp \
-	  PresidentialPardonForm.cpp
-#SRC = main.cpp \
-	  Bureaucrat.cpp \
-	  Form.cpp \
 	  ShrubberyCreationForm.cpp \
 	  RobotomyRequestForm.cpp \
 	  PresidentialPardonForm.cpp

@@ -4,31 +4,32 @@
 #include <string>
 #include <exception>
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 class   Bureaucrat;
 
-class   Form
+class   ShrubberyCreationForm : public Form
 {
 private:
-    const std::string   _name;
-    bool                _signed;
-    const int           _signingGrade;
-    const int           _executingGrade;
-    
-    Form(void);
+    std::string _target;
+
+    ShrubberyCreationForm(void);
+
 public:
-    Form(std::string name, int signingGrade, int executingGrade);
-    Form(const Form &other);
-    ~Form(void);
+    ShrubberyCreationForm(std::string target);
+    ShrubberyCreationForm(const ShrubberyCreationForm &other);
+    ~ShrubberyCreationForm(void);
 
-    Form    &operator=(const Form &src);
+    ShrubberyCreationForm    &operator=(const ShrubberyCreationForm &src);
 
-    std::string   getName(void) const;
-    bool                getSigned(void) const;
-    int           getSigningGrade(void) const;
-    int           getExecutingGrade(void) const;
+    std::string getName(void) const;
+    std::string getTarget(void) const;
+    bool        getSigned(void) const;
+    int         getSigningGrade(void) const;
+    int         getExecutingGrade(void) const;
 
-    void                beSigned(const Bureaucrat &bureaucrat);
+    void        beSigned(const Bureaucrat &bureaucrat);
+    void        execute(const Bureaucrat &executor) const;
 
     class   GradeTooLowException : public std::exception
     {
@@ -54,5 +55,3 @@ public:
         virtual const char  *what() const throw();
     };
 };
-
-std::ostream    &operator<<(std::ostream &o, const Form &f);
