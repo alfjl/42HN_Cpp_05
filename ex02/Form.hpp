@@ -19,7 +19,7 @@ private:
 public:
     Form(std::string name, int signingGrade, int executingGrade);
     Form(const Form &other);
-    ~Form(void);
+    virtual ~Form(void);
 
     Form    &operator=(const Form &src);
 
