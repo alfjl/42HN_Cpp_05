@@ -21,7 +21,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
 
 debug: $(OBJ)
-	$(CC) $(CFLAGS) -std=c++98 $^ -o $@
+	$(CC) $(CFLAGS) -std=c++98 -pedantic $^ -o $@
 
 clean:
 	rm -f *.o *~
